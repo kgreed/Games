@@ -38,8 +38,7 @@
             memoEdit1.Name = "memoEdit1";
             memoEdit1.Size = new Size(319, 162);
             memoEdit1.TabIndex = 0;
-            memoEdit1.EditValueChanged += memoEdit1_EditValueChanged;
-            memoEdit1.EditValueChanging += memoEdit1_EditValueChanging;
+           
             memoEdit1.TextChanged += memoEdit1_TextChanged;
             // 
             // InfoControl

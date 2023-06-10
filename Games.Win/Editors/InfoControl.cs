@@ -29,15 +29,7 @@ namespace Games.Win.Editors
         public bool ReadOnly { get; internal set; }
         public Action<object, EventArgs> ValueChanged { get; internal set; }
 
-        private void memoEdit1_EditValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void memoEdit1_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
-        {
-
-        }
+       
 
         private void memoEdit1_TextChanged(object sender, EventArgs e)
         {
