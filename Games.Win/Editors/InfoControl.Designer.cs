@@ -49,7 +49,7 @@
             MinimumSize = new Size(368, 225);
             Name = "InfoControl";
             Size = new Size(368, 225);
-            Load += InfoControl_Load;
+         
             ((System.ComponentModel.ISupportInitialize)memoEdit1.Properties).EndInit();
             ResumeLayout(false);
         }

@@ -38,9 +38,6 @@ namespace Games.Win.Editors
             ValueChanged?.Invoke(sender, e);
         }
 
-        private void InfoControl_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
