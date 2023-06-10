@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="Games">
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.EF.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
+  </BOModel>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="22.2.6.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="ApplicationUser_ListView" Caption="Users" />
+    <DetailView Id="Game_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Game">
+              <LayoutItem Id="Participants" ViewItem="Participants" ShowCaption="False" Index="0" IsNewNode="True" />
+              <LayoutItem Id="Spectators" ViewItem="Spectators" ShowCaption="False" Index="0" IsNewNode="True" />
+              <LayoutItem Id="Team1" ViewItem="Team1" ShowCaption="False" Index="0" IsNewNode="True" />
+              <LayoutItem Id="Team2" ViewItem="Team2" ShowCaption="False" Index="0" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" Removed="True">
+            <LayoutGroup Id="Participants">
+              <LayoutItem Id="Participants" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="Spectators">
+              <LayoutItem Id="Spectators" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="Team1">
+              <LayoutItem Id="Team1" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="Team2">
+              <LayoutItem Id="Team2" Removed="True" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Game_Participants_ListView">
+      <Columns>
+        <ColumnInfo Id="Player" Width="190" />
+        <ColumnInfo Id="Assignment" Width="204" />
+      </Columns>
+    </ListView>
+    <ListView Id="Person_ListView" AllowEdit="True" />
+  </Views>
+</Application>
